@@ -1,7 +1,51 @@
-body {
+@font-face {
+  font-family: NorseBold;
+  font-style: normal;
+  font-weight: normal;
+  src: url("/Norse-Bold.otf") format("opentype");
+}
+
+body, html {
+  margin: 0px;
+  border: 0px;
   display: flex;
+  height: 100%;
+
+  overflow: hidden;
 }
 
 .side-header-1 {
-  
+  background-image: url(backgroundImage.jpg);
+  height: 100%;
+  width: 480px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.logoHeader {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.65);
+  font-size: 100px;
+  font-family: NorseBold;
+  padding: 5% 0 5% 0;
+
+  margin-top: 30%;
+}
+
+.logo {
+  height: 1em;
+  width: auto;
+}
+
+.photo-ref {
+  color: white;
+  font-size: 12px;
+  margin-top: auto;
 }
