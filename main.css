@@ -91,13 +91,42 @@ h1 {
 }
 
 .form-area {
-  height: 30%;
   padding-left: 32px;
+  padding-bottom: 32px;
+}
+
+input {
+  width: 256px;
+  height: 24px;
+  border-color: #ESE7EB;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  margin-right: 64px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: row;
+}
+
+label {
+  color: rgb(34, 33, 33);
+  font-size: 14px;
+  font-weight: 550;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 2px;
 }
 
 h2 {
   font-size: 24px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+fieldset {
+  border: none;
 }
 
 .button-area {
