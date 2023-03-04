@@ -5,19 +5,26 @@
   src: url("/Norse-Bold.otf") format("opentype");
 }
 
+:root {
+  --logo-font-size: 72px;
+  --heading-section: 35%;
+}
+
 body, html {
   margin: 0px;
   border: 0px;
   height: 100%;
+  width: 100%;
 
   display: flex;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .icon-section {
   background-image: url(backgroundImage.jpg);
   height: 100%;
-  width: 40%;
+  width: 30%;
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -36,7 +43,7 @@ body, html {
   font-family: NorseBold;
   padding: 5% 0 5% 0;
 
-  margin-top: 30%;
+  margin-top: calc(25% + 24px);
 }
 
 .logo {
@@ -69,4 +76,50 @@ body, html {
 .content-section {
   display: flex;
   flex-direction: column;
+  width: 70%;
+}
+
+.intro-area, .button-area {
+  height: 35%;
+  background-color: whitesmoke;
+  padding-left: 32px;
+}
+
+h1 {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-area {
+  height: 30%;
+  padding-left: 32px;
+}
+
+h2 {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-area {
+  padding-top: 32px;
+}
+
+button {
+  color: white;
+  background-color: #596D48;
+  padding: 5px 40px;
+  border-radius: 5px;
+}
+
+.button-area a {
+  text-decoration: none;
+  font-weight: bold
+}
+
+.button-area a:link {
+  color: #596D48;
+}
+
+.button-area a:visited {
+  color: #596D48;
 }
